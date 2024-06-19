@@ -1,13 +1,9 @@
 h, m = map(int, input().split())
 add_m = int(input())
 
-m += add_m
+total_min = h * 60 + m + add_m
 
-if m >= 60: # m = 85
-    m -= 60
-    h += 1
-
-if h >= 24: # m = 26
-    h -= 24
+h = (total_min // 60) % 24
+m = total_min % 60
 
 print(h, m)

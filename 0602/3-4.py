@@ -12,4 +12,3 @@ for i in range(n): # 한 행씩 실행
     result = max(result, min_value) # 현재 행의 min_value와 result를 비교 ➜ 최소값 중 최대값이 result에 저장
 
 print(result)
-
